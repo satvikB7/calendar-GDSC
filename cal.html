@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2><u><i><b>CALENDAR</b></i></u></h2>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+    </div>
+    <div class="calendar-container"> 
+        <div class="controls">
+            <label for="month">Month:</label>
+            <select id="month" onchange="updateCalendar()"></select>
+            <label for="year">Year:</label>
+            <select id="year" onchange="updateCalendar()"></select>
+        </div>
+        <div class="calendar" id="calendar"></div>
+        
+    </div>
+    <div class="event-details" id="eventDetails">
+        <h2>Event Details</h2>
+        <p id="eventDateDetail"></p>
+        <p id="eventTitleDetail"></p>
+        <a href="registrationform.html" target="_blank">Registration link</a>   
+    </div>
+    <div class="search-box">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="search for an event"
+            autocomplete="off">
+            <button>search</button>
+        </div>
+        <div class="result-box">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

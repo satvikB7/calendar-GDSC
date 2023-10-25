@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="registrationform.css" type="text/css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h3><u>Registration form</u></h3>
+                <form id="register" method="post">
+                    <label>First Name : </label>
+                    <br>
+                    <input type="text" name="fname"
+                    id="name" placeholder="Enter your First Name">
+                    <br><br>
+                    <label>Last Name : </label>
+                    <br>
+                    <input type="text" name="lname"
+                    id="name" placeholder="Enter your Last Name">
+                    <br><br>
+                    <label>Email : </label>
+                    <br>
+                    <input type="email" name="email"
+                    id="name" placeholder="Enter valid email address">
+                    <br><br>
+                    <label>Gender : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender"
+                    id="male">
+                    &nbsp;
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender"
+                    id="female">
+                    &nbsp;
+                    <span id="female">Female</span>
+                    <br><br>
+                    <label>Phone number : </label>
+                    <br>
+                    <input type="number" name="phno"
+                    id="name" placeholder="Enter you phone number">
+                    <br><br>
+                    <label>Availability : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="availability"
+                    id="Yes">
+                    &nbsp;
+                    <span id="Yes">Yes</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="availability"
+                    id="No">
+                    &nbsp;
+                    <span id="No">No</span>
+                    <br><br>
+                    <label>Payment : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="payment"
+                    id="Online">
+                    &nbsp;
+                    <span id="Online">Online</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="payment"
+                    id="Offline">
+                    &nbsp;
+                    <span id="Offline">Offline</span>
+                    <br><br>
+                    <label>College Name : </label>
+                    <br>
+                    <input type="text" name="college"
+                    id="name" placeholder="Enter your College Name">
+                    <br><br>
+                    <label>Number of passes?</label>
+                    <br>
+                    <label>(Each pass = 500)</label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="passes"
+                    id="500">
+                    <span id="500">500</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="passes"
+                    id="1000">
+                    <span id="1000">1000</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="passes"
+                    id="1500">
+                    <span id="1500">1500</span>
+                    <br><br> 
+                </form>
+                <div class="container">
+                    <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                    <div class="popup" id="popup">
+                        <h2>Thank You!!</h2>
+                        <p>Your details has been successfully submitted.</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+
+                    </div>  
+                </div>
+            </div>
+            
+        </div>
+        <script src="registrationform.js"></script>
+    </body>
+</html>
